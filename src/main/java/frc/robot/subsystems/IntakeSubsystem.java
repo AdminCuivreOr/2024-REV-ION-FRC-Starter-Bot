@@ -34,7 +34,7 @@ public class IntakeSubsystem extends SubsystemBase {
     m_encoder = m_motor.getEncoder(SparkRelativeEncoder.Type.kHallSensor, 42);
 
     m_controller = m_motor.getPIDController();
-    PIDGains.setSparkMaxGains(m_controller, Constants.Intake.kPositionGains);
+    PIDGains.setSparkGains(m_controller, Constants.Intake.kPositionGains);
 
     m_motor.burnFlash();
 

@@ -52,7 +52,7 @@ public class ArmSubsystem extends SubsystemBase {
     m_encoder.setPosition(0.0);
 
     m_controller = m_motor.getPIDController();
-    PIDGains.setSparkMaxGains(m_controller, Constants.Arm.kArmPositionGains);
+    PIDGains.setSparkGains(m_controller, Constants.Arm.kArmPositionGains);
 
     m_motor.burnFlash();
 
